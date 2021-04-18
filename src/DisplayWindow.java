@@ -147,6 +147,8 @@ public class DisplayWindow extends PApplet {
         rect(0, height-20*2, width, 20*2);
         fill(0);
 
+        // TODO: BUG if currentDisplayFrame == null because their filter returns null we should return
+
         count++;
         if (count == 11) {
             colorString = colorStringAt(mouseX, mouseY);
